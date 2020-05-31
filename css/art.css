@@ -1,0 +1,252 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'NeueHaasDisplay-Light';
+}
+
+section {
+    margin-top: 5%;
+    background-color: white;
+}
+
+h1 {
+    padding-bottom: 25px;
+    font-size: 1.8rem;
+    letter-spacing: 0.125em;
+    text-transform: uppercase;
+}
+
+div img {
+    display: block;
+    width: 100%;
+}
+
+.container.lim {
+    padding: 0 25px 0 25px;
+    max-width: 1100px;
+    width: 100%;
+}
+
+.box {
+
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 50px;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.photo {
+    flex-basis: 50%;
+    width: 50%;
+    padding-right: 20px;
+    border-right: 1px solid #ccc;
+}
+
+.photo2 {
+    flex-basis: 40%;
+    width: 90%;
+    padding-top: 40px;
+    padding-left: 0px;
+    padding-right: 80px;
+}
+
+.photo3 {
+    flex-basis: 58%;
+    width: 30%;
+    padding-top: 40px;
+    padding-left: 110px;
+}
+
+.photo4 {
+    flex-basis: 50%;
+    width: 50%;
+}
+
+.photo5 {
+    flex-basis: 50%;
+    width: 50%;
+}
+
+.photo44 {
+    flex-basis: 49%;
+    width: 50%;
+    padding-right: 19px;
+    padding-top: 40px;
+}
+
+.photo33 {
+    flex-basis: 58%;
+    width: 30%;
+    padding-top: 40px;
+    padding-left: 110px;
+    padding-bottom: 10px;
+}
+
+.photo55 {
+    flex-basis: 49%;
+    width: 50%;
+    padding-top: 40px;
+    padding-left: 19px;
+}
+
+.photo555 {
+    flex-basis: 50%;
+    width: 50%;
+    padding-left: 21px;
+    padding-bottom: 5%;
+}
+
+.photo444 {
+    flex-basis: 50%;
+    width: 50%;
+    padding-right: 21px;
+    padding-bottom: 5%;
+}
+
+.photo222 {
+    flex-basis: 50%;
+    width: 50%;
+    padding-top: 40px;
+    padding-right: 20px;
+}
+
+.photo333 {
+    flex-basis: 50%;
+    width: 50%;
+    padding-top: 40px;
+    padding-left: 20px;
+}
+
+.photo img {}
+
+.text {
+    width: 35%;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-right: 1px solid #ccc;
+    text-align: left;
+    font-size: 1rem;
+    line-height: 1.6;
+    letter-spacing: 0.02em;
+}
+
+.text1 {
+    width: 45%;
+    padding-left: 20px;
+    text-align: left;
+    font-size: 1rem;
+    line-height: 1.6;
+    letter-spacing: 0.02em;
+}
+
+.text.two {
+    width: 15%;
+    border: none;
+    text-align: left;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0;
+}
+
+
+@media screen and (max-width:812px) {
+    .container {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+
+    .photo {
+        flex-basis: 100%;
+        width: 100%;
+        border: none;
+        padding-right: 0;
+    }
+
+    .text {
+        width: 100%;
+        padding: 30px 70px 10px 70px;
+        border: none;
+    }
+
+    .text1 {
+        width: 100%;
+        padding: 20px 70px 10px 70px;
+        border: none;
+    }
+
+    .photo2,
+    .photo3,
+    .photo44,
+    .photo55,
+    .photo222,
+    .photo333,
+    .photo444,
+    .photo555 {
+        flex-basis: 100%;
+        width: 100%;
+        padding: 10px 0px 0 0;
+    }
+
+    .photo5,
+    .photo4 {
+        flex-basis: 100%;
+        width: 100%;
+        padding: 10px 20px 0 20px;
+    }
+
+    .container.lim {
+        padding: 0 20px 0 20px;
+        max-width: 1100px;
+        width: 100%;
+    }
+
+    .text.two {
+        width: 100%;
+        padding: 10px 70px 30px 70px;
+    }
+
+    .photo555,
+    .photo5 {
+        padding-bottom: 50px;
+    }
+}
+
+@media screen and (max-width:414px) {
+
+    .text {
+        width: 100%;
+        padding: 30px 0px 10px 0px;
+        border: none;
+    }
+    .text1 {
+        width: 100%;
+        padding: 20px 00px 10px 0px;
+        border: none;
+    }
+
+    .text.two {
+        width: 100%;
+        padding: 10px 0px 30px 0px;
+    }
+
+    .photo5,
+        {
+        padding-bottom: 50px;
+    }
+}
+}

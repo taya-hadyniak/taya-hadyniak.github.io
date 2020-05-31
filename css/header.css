@@ -1,0 +1,153 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-image: url("../images/IMG_9110.JPG");
+        filter: grayscale();
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+header:hover {
+    filter: none;
+}
+
+.scroll-btn {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    background: transparent;
+    background-size: 12px;
+    border-radius: 100%;
+    position: fixed;
+    z-index: 100;
+    bottom: 15%;
+    cursor: pointer;
+    animation-name: scroll-btn;
+    opacity: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes scroll-btn {
+    0% {
+        box-shadow: 0px 0px 0px 0px rgba(255, 52, 103, 0);
+    }
+
+    3% {
+        box-shadow: 0px 0px 0px 2px rgba(0, 0, 0, 0);
+    }
+
+    35% {
+        box-shadow: 0px 0px 0px 10px rgba(0, 0, 0, 0);
+    }
+}
+
+/* Scroll button wrap (for second pulse) */
+
+.scroll-btn-wrap {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    background: rgba(255, 255, 255, 0);
+    border-radius: 100%;
+    position: fixed;
+    z-index: 99;
+    bottom: 15%;
+    cursor: pointer;
+    animation-name: scroll-btn-wrap;
+    opacity: ;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+.scroll-btn-wrap img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 100;
+    /*    padding-left: -25px;*/
+}
+
+
+@keyframes scroll-btn-wrap {
+    15% {
+        box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, .7);
+    }
+
+    18% {
+        box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, .7);
+    }
+
+    50% {
+        box-shadow: 0px 0px 0px 7px rgba(255, 52, 103, 0);
+    }
+}
+
+.scroll-btn i {
+    height: 3px;
+}
+
+@keyframes arrow {
+    20% {
+        margin: 5px 9px;
+    }
+
+    30% {
+        margin: 7px 9px;
+    }
+
+    50% {
+        margin: 5px 9px;
+    }
+}
+
+header h1 {
+    color: #fff;
+    font-family: 'NeueHaasDisplay-Mediu';
+    font-size: 3.5vw;
+    letter-spacing: 0.09em;
+    line-height: 1.1;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+header p {
+    color: #fff;
+    font-family: 'NeueHaasDisplay-Light';
+    text-align: center;
+    font-size: 1.5vw;
+    letter-spacing: 0.2em;
+}
+
+@media screen and (max-width:1024px) {
+    header h1 {
+        font-size: 6.5vw;
+    }
+
+    header p {
+        font-size: 3.5vw;
+    }
+}
+
+@media screen and (max-width:812px) {
+    header h1 {
+        font-size: 6.5vw;
+    }
+
+    header p {
+        font-size: 4.5vw;
+    }
+}

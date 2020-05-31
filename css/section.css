@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    margin-left: -25px;
+}
+
+#header {
+    position: ;
+    height: 60px;
+    top: 0px;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: #fff;
+    border-bottom-color: rgba(0, 0, 0, 0.1);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 0px 0px;
+}
+
+.box-photo {
+    margin: auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.image {
+    width: 25%;
+    padding: 0;
+    filter: grayscale(100%);
+    cursor: pointer;
+}
+
+.image:hover {
+    filter: grayscale(0%);
+}
+
+.image a,
+.image img {
+    display: block;
+    width: 100%;
+    line-height: .7;
+}
+
+.image a {
+    position: relative;
+}
+
+.image p {
+    font-family: 'NeueHaasDisplay-Light';
+    font-size: 1.2vw;
+    letter-spacing: 0.1em;
+    color: #fff;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: all .3s ease;
+}
+
+.image a:hover p {
+    opacity: 1;
+}
+
+
+
+@media screen and (max-width:1024px) {
+
+    .image {
+        width: 33.33%;
+    }
+
+    .image p {
+        font-size: 2.2vw;
+    }
+
+    @media screen and (max-width:768px) {
+
+        .image {
+            width: 50%;
+        }
+
+        .image p {
+            font-size: 3.2vw;
+        }
+
+
+        @media screen and (max-width:414px) {
+
+            .image {
+                width: 100%;
+            }
+
+            .image p {
+                font-size: 6.2vw;
+            }

@@ -1,0 +1,153 @@
+.contact {
+    width: 35%;
+    padding-right: 20px;
+    border-right: 1px solid #ccc;
+    text-align: left;
+    font-size: 1rem;
+    line-height: 1.4;
+    letter-spacing: 0.02em;
+}
+
+.contact2 {
+    width: 15%;
+    border: none;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.container.lim {
+    padding: 0 25px 0 25px;
+    max-width: 1100px;
+    min-height: 80vh;
+    width: 100%;
+    margin-top: 8%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.port {
+    flex-basis: 30%;
+    width: 30%;
+    padding-right: 20px;
+}
+
+.port img {
+    width: 100%;
+}
+
+.box {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 50px;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+h6 {
+    padding-bottom: 15px;
+    font-family: 'NeueHaasDisplay-Light';
+    font-size: 1.5vw;
+    letter-spacing: 0.09em;
+}
+
+p {
+    font-family: 'NeueHaasDisplay-Light';
+    font-size: 1.2 vw;
+    letter-spacing: 0.02em;
+}
+
+
+@media screen and (max-width:1024px) {
+    .container.lim {
+        width: 80%;
+        margin-top: 5%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .port {
+        flex-basis: 50%;
+        width: 50%;
+        padding-right: 20px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .container.lim {
+        width: 80%;
+        margin-top: 0%;
+        margin-left: 17%;
+        margin-right: 0%;
+    }
+
+    .box {
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+
+    .contact {
+        border: none;
+        width: 80%;
+        padding: 10px 0px 0 0px;
+    }
+
+    .port {
+        flex-basis: 80%;
+        width: 80%;
+        padding-right: 0px;
+    }
+
+    .contact2 {
+        width: 80%;
+        padding: 15px 0 0 0;
+    }
+
+    h6 {
+        padding: 10px 0 10px 0;
+
+        font-size: 4.5vw;
+        letter-spacing: 0.09em;
+    }
+}
+
+@media screen and (max-width:414px) {
+    .container.lim {
+        padding: 0 25px 0 25px;
+        max-width: 1100px;
+        min-height: 80vh;
+        width: 100%;
+        margin-top: 0%;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
+    .box {
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+
+    .contact {
+        border: none;
+        width: 100%;
+        padding: 10px 0px 0 0px;
+    }
+
+    .port {
+        flex-basis: 90%;
+        width: 100%;
+        padding-right: 0px;
+    }
+
+    .contact2 {
+        width: 100%;
+        padding: 15px 0 0 0;
+    }
+
+    h6 {
+        padding: 10px 0 10px 0;
+        font-size: 4.5vw;
+        letter-spacing: 0.09em;
+    }
+}
